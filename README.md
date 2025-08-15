@@ -97,3 +97,9 @@ Implementing a background timer that continues running even when users navigate 
 ### Responsive:
 - The app is fully responsive, providing a seamless experience on both desktop and mobile devices.
 - All pages and components adapt smoothly to different screen sizes for better usability.
+
+  <img width="377" height="842" alt="image" src="https://github.com/user-attachments/assets/87fdc81c-2a44-4ee3-997a-fe93c3b29d96" /><br><br>
+  <img width="382" height="837" alt="image" src="https://github.com/user-attachments/assets/076dcb4d-0f39-44af-b204-c63284a72737" /><br><br>
+  <img width="370" height="827" alt="image" src="https://github.com/user-attachments/assets/33a68976-92de-48db-98a8-6d09e10c145d" />
+
+
