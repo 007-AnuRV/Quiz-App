@@ -93,7 +93,7 @@ const clearResponse = (questionId) => {
             </div>
             <div>
               <Button
-                className="bg-emerald-600 text-white"
+                className="bg-emerald-600 text-white cursor-pointer"
                 onClick={submitQuiz}
               >
                 Submit
@@ -111,7 +111,7 @@ const clearResponse = (questionId) => {
               transition={{ duration: 0.2 }}
             >
               <Card className="p-6">
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex items-start justify-between gap-4 cursor-pointer">
                   <div>
                     <div className="text-sm font-semibold text-gray-900">
                       Question {currentIndex + 1} of {questions.length}
@@ -168,11 +168,11 @@ const clearResponse = (questionId) => {
                   <Button
                     onClick={prev}
                     disabled={currentIndex === 0}
-                    className="min-w-[100px] bg-gray-500 text-white"
+                    className="min-w-[100px] bg-gray-500 text-white  cursor-pointer"
                   >
                     Previous
                   </Button>
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm text-gray-500 ">
                     {q.attempted ? (
                       <div
                         className="text-sm text-red-500 cursor-pointer hover:underline"
@@ -187,7 +187,7 @@ const clearResponse = (questionId) => {
                   <Button
                     onClick={next}
                     disabled={currentIndex === questions.length - 1}
-                    className="min-w-[100px] bg-blue-500 text-white"
+                    className="min-w-[100px] bg-blue-500 text-white cursor-pointer"
                   >
                     Next
                   </Button>
@@ -204,7 +204,7 @@ const clearResponse = (questionId) => {
 
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <span className="inline-flex items-center gap-1">
-                <span className="h-3 w-3 rounded-full bg-yellow-500 inline-block" />{" "}
+                <span className="h-3 w-3 rounded-full bg-yellow-500 inline-block " />{" "}
                 Current
               </span>
               <span className="inline-flex items-center gap-1">
@@ -217,7 +217,7 @@ const clearResponse = (questionId) => {
               </span>
             </div>
           </div>
-          <div className="flex items-center gap-2 mb-3 gap-4">
+          <div className="flex items-center mb-3 gap-4">
             <Badge className="bg-purple-100 text-blue-800 text-[15px]">
               Visited: {visitedCount}/{questions.length}
             </Badge>
@@ -229,7 +229,7 @@ const clearResponse = (questionId) => {
             {questions.map((q, i) => {
               const isCurrent = i === currentIndex;
               const base =
-                "h-8 w-8 rounded-full flex items-center justify-center text-xs font-medium border transition";
+                "h-8 w-8 rounded-full flex items-center justify-center text-xs font-medium border transition cursor-pointer";
               let styles = "bg-gray-100 text-gray-700 border-gray-200";
               if (q.visited)
                 styles = "bg-purple-400 text-blue-800 border-blue-200";
