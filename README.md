@@ -22,6 +22,8 @@ I built a Quiz App where users can take a 15-question MCQ quiz with a 30-minute 
 ### 1. StartPage 
 - Allows users to enter their email to begin the quiz.
 
+  <img width="1106" height="699" alt="image" src="https://github.com/user-attachments/assets/33028a97-e6ac-4879-b031-7a93f118813d" />
+
 ### 2. QuizPage
 - Displays questions with multiple-choice options.
 - Provides Previous and Next buttons for navigation.
@@ -33,6 +35,9 @@ I built a Quiz App where users can take a 15-question MCQ quiz with a 30-minute 
     - **Red:** Critical time running out
 - Includes a Quiz Overview Panel to track attempted, visited, unvisited, and current questions 
 
+  <img width="1619" height="755" alt="image" src="https://github.com/user-attachments/assets/cab06d07-823a-4851-a570-5071fec764da" />
+  <img width="1551" height="760" alt="image" src="https://github.com/user-attachments/assets/3ad4356d-496c-4383-8014-da28e56373ed" />
+  
 ### 3. OverviewPanel
 - Provides a clear snapshot of the quiz progress.
 - Shows the status of each question: Attempted, Visited, unvisited, and current by using color coding:
@@ -43,10 +48,22 @@ I built a Quiz App where users can take a 15-question MCQ quiz with a 30-minute 
 - Helps users navigate quickly between questions.
 - Updates dynamically as the user answers questions.
 
+  <img width="412" height="410" alt="image" src="https://github.com/user-attachments/assets/91bd9f0f-8a36-4f13-9571-a284e177a123" />
+
+
 ### 4. ReportPage
 - Displays the score out of 15 questions.
 - Shows attempted vs. unattempted questions.
 - Allows users to compare their answers with the correct ones.
+
+  <img width="1193" height="873" alt="image" src="https://github.com/user-attachments/assets/d0ebbdac-84d5-4897-af93-b4a9b51f07be" />
+
+  <img width="1057" height="527" alt="image" src="https://github.com/user-attachments/assets/244444a8-4653-48f4-9d5b-50a144afa5b9" />
+  
+  <img width="1143" height="727" alt="image" src="https://github.com/user-attachments/assets/1048435e-0b77-4211-9f74-02add9ce897c" />
+
+
+
 
 ## Setup & Installation
 
