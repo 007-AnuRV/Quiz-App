@@ -5,6 +5,9 @@ import Button from "../components/Button";
 import Badge from "../components/Badge";
 import { formatTime } from "../utils/helpers";
 
+// QuizPage: Displays each question with multiple-choice options, manages user answers, navigation (Next/Previous), and clearing responses.
+// Tracks visited and attempted questions in real-time, shows a dynamic timer, and provides an Overview Panel for quick navigation and progress tracking.
+
 export default function QuizPage({
   email,
   questions,
@@ -247,6 +250,7 @@ const clearResponse = (questionId) => {
             })}
           </div>
 
+          {/* Instruction */}
           <div className="mt-4 text-sm text-gray-600">
             Click a number to jump to that question. You can submit anytime;
             otherwise it auto-submits when the timer ends.

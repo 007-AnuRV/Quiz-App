@@ -13,7 +13,7 @@ export default function App() {
   const [remaining, setRemaining] = useState(TOTAL_SECONDS);
   const timerRef = useRef(null);
 
-  // START QUIZ
+  // Start quiz
   const startQuizHandler = (newQuestions) => {
     setQuestions(newQuestions);
     setPhase("quiz");
@@ -21,7 +21,7 @@ export default function App() {
     setRemaining(TOTAL_SECONDS);
   };
 
-  // TIMER
+  // Timer
   useEffect(() => {
     if (phase !== "quiz") return;
     if (timerRef.current) clearInterval(timerRef.current);
@@ -46,7 +46,7 @@ export default function App() {
     );
   }, [questions]);
 
-  // RESET
+  // Reset
   const resetQuiz = () => {
     setPhase("start");
     setQuestions([]);

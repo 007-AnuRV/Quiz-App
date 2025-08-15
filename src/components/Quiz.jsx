@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Question from "./Question";
 
+// Handles quiz progression: displays the current question, updates the score 
+// when a user answers, and calls the submission callback when the quiz ends or user finishes.
+
 export default function Quiz({ questions, onFormSubmit }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);

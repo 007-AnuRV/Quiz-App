@@ -1,6 +1,9 @@
 
 import React from "react";
 
+// Displays a single quiz question with multiple-choice options, 
+// shuffles the options randomly, and calls the callback when a user selects an answer.
+
 function Question({ question, onUserAnswer }) {
   const shuffle = (array) => [...array].sort(() => Math.random() - 0.5);
 

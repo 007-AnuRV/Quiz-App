@@ -4,6 +4,10 @@ import Button from "../components/Button";
 import { validateEmail } from "../utils/helpers";
 import { fetchQuestions } from "../utils/api";
 
+// Allows the user to enter their email to begin the quiz. 
+// Validates the email, fetches quiz questions from the API, handles loading and fetch errors, 
+// and calls startQuizHandler to begin the quiz.
+
 export default function StartPage({
   email,
   setEmail,
@@ -35,6 +39,7 @@ export default function StartPage({
   return (
     <div className="min-h-screen bg-sky-100 flex items-center justify-center p-4">
       <Card className="max-w-xl w-full p-10 shadow-lg">
+        {/* Quiz title and description */}
         <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
           Quiz Application
         </h1>
@@ -43,6 +48,7 @@ export default function StartPage({
           to complete it, and it will auto-submit when time runs out.
         </p>
 
+        {/* Email input form */}
         <form
           className="mt-6 space-y-4"
           onSubmit={(e) => {
@@ -63,6 +69,7 @@ export default function StartPage({
           </label>
           {emailError && <p className="text-sm text-red-600">{emailError}</p>}
 
+          {/* Start button and fetch error */}
           <div className="flex items-center gap-3">
             <Button
               className="bg-blue-500 text-white cursor-pointer"

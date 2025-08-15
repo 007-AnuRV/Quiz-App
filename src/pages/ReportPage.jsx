@@ -3,6 +3,9 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import Badge from "../components/Badge";
 
+        // Displays the user's quiz results including score, attempted/unattempted questions, 
+        // and a review of each question with user vs correct answers.*/
+        
 export default function ReportPage({ email, questions, score, restart }) {
   return (
     <div className="min-h-screen bg-sky-100 p-4 md:p-8">
@@ -12,6 +15,7 @@ export default function ReportPage({ email, questions, score, restart }) {
           <Badge className="bg-gray-100 text-gray-800">{email}</Badge>
         </div>
 
+        {/* Score, attempted/unattempted questions, instructions */}
         <Card className="p-6">
           <div className="flex flex-wrap items-center gap-3">
             <Badge className="bg-green-100 text-green-800">
@@ -30,6 +34,7 @@ export default function ReportPage({ email, questions, score, restart }) {
           </p>
         </Card>
 
+        {/* List all questions with user's answer and correct answer */}
         <div className="space-y-4">
           {questions.map((q, i) => {
             const correct = q.userAnswer === q.correct;
@@ -95,6 +100,7 @@ export default function ReportPage({ email, questions, score, restart }) {
           })}
         </div>
 
+        {/* Provides a Restart button to reset the quiz and go back to the start*/}
         <div className="pt-4 ">
           <Button
             className="bg-green-600 text-white cursor-pointer"
